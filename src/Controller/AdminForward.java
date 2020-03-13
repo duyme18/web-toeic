@@ -20,7 +20,7 @@ public class AdminForward extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("Admin/Admin.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("View/Admin/Home.jsp");
 		rd.forward(request, response);
 	}
 

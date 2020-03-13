@@ -55,7 +55,7 @@ public class LoginController extends HttpServlet {
 				if (authorization == 2) {
 					HttpSession httpSession = request.getSession(true);
 					httpSession.setAttribute("sessionadmin", fullname);
-					RequestDispatcher rd = request.getRequestDispatcher("HomeForward");
+					RequestDispatcher rd = request.getRequestDispatcher("View/Admin/Home.jsp");
 					rd.forward(request, response);
 				}
 			}
