@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,15 +74,60 @@
 					<!-- /.nav-search -->
 				</div>
 
-
-
 				<div class="page-content">
+					<c:if test="${msglistgrammarguidelinemanage!=null}">
+						<h4 class="pink">
+							<i
+								class="ace-icon fa fa-hand-o-right icon-animated-hand-pointer blue"></i>
+							<a class="green" data-toggle="modal">
+								${msglistgrammarguidelinemanage} </a>
+						</h4>
+						<div class="hr hr-18 dotted hr-double"></div>
+					</c:if>
 					<div class="row">
 						<div class="col-xs-12">
-							<center class="paddingtop-image">
-								<img width="550" height="350"
-									src="Template/Back-End/assets/images/admin.jpg" />
-							</center>
+							<div class="row">
+								<div class="col-xs-12">
+									<table id="simple-table"
+										class="table  table-bordered table-hover">
+										<thead>
+											<tr>
+												<th class="center">ID</th>
+												<th class="center">Tên bài hướng dẫn ngữ pháp</th>
+												<th class="center">Tên hình ảnh</th>
+												<th class="center">Xóa</th>
+												<th class="center">Thêm nội dung</th>
+											</tr>
+										</thead>
+										<tbody>
+											<c:forEach items="${listgrammarguidelinemanage}" var="list">
+												<tr>
+													<td class="center">${list.grammarguidelineid }</td>
+													<td class="center">${list.grammarname }</td>
+													<td class="center">${list.content }</td>
+													<td class="center">Xoá</td>
+													<td class="center">Duy</td>
+												</tr>
+											</c:forEach>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-12">
+									<button class="btn btn-white btn-info btn-bold">
+										<i class="ace-icon fa fa-floppy-o bigger-120 blue"></i> Thêm
+										bài
+									</button>
+									<button class="btn btn-white btn-warning btn-bold">
+										<i class="ace-icon fa fa-trash-o bigger-120 orange"></i> Thêm
+										hình
+									</button>
+								</div>
+
+							</div>
+
 						</div>
 					</div>
 				</div>
