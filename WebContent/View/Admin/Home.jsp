@@ -8,6 +8,9 @@
 
 <link rel="stylesheet"
 	href="Template/Back-End/assets/css/bootstrap.min.css" />
+<!-- font -->
+<link rel="stylesheet"
+	href="Template/Back-End/font/font-awesome.min.css" />
 <link rel="stylesheet"
 	href="Template/Back-End/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 <link rel="stylesheet"
@@ -24,6 +27,11 @@
 
 <script src="assets/js/ace-extra.min.js"></script>
 
+<style type="text/css">
+.paddingtop-image {
+	padding-top: 50px
+}
+</style>
 </head>
 
 <body class="no-skin">
@@ -54,9 +62,8 @@
 			<div class="main-content-inner">
 				<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 					<ul class="breadcrumb">
-						<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
-						</li>
-						<li class="active">Gallery</li>
+						<li><i class="ace-icon fa fa-home home-icon"></i> <a
+							href="AdminForward">Trang chủ</a></li>
 					</ul>
 					<!-- /.breadcrumb -->
 
@@ -73,27 +80,13 @@
 				</div>
 
 				<div class="page-content">
-					<div class="page-header">
-						<h1>
-							Gallery <small> <i
-								class="ace-icon fa fa-angle-double-right"></i> responsive photo
-								gallery using colorbox
-							</small>
-						</h1>
-					</div>
 					<!-- /.page-header -->
 					<div class="row">
 						<div class="col-xs-12">
-							<div>
-								<ul class="ace-thumbnails clearfix">
-									<li><a
-										href="Template/Back-End/assets/images/gallery/image-1.jpg"
-										title="Photo Title" data-rel="colorbox"> <img width="150"
-											height="150" alt="150x150"
-											src="Template/Back-End/assets/images/gallery/thumb-1.jpg" />
-									</a></li>
-								</ul>
-							</div>
+							<center class="paddingtop-image">
+								<img width="550" height="350"
+									src="Template/Back-End/assets/images/admin.jpg" />
+							</center>
 						</div>
 					</div>
 				</div>

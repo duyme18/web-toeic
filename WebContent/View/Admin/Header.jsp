@@ -22,8 +22,8 @@
 						data-toggle="dropdown" href="#" class="dropdown-toggle"> <img
 							class="nav-user-photo"
 							src="Template/Back-End/assets/images/avatars/user.jpg"
-							alt="Jason's Photo" /> <span class="user-info"> <small>Welcome,</small>
-								Jason
+							alt="Jason's Photo" /> <span class="user-info"> <small>Xin chào,</small>
+								<%=session.getAttribute("sessionadmin")%>
 						</span> <i class="ace-icon fa fa-caret-down"></i>
 					</a>
 
