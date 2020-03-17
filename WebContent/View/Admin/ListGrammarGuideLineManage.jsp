@@ -95,8 +95,8 @@
 												<th class="center">ID</th>
 												<th class="center">Tên bài hướng dẫn ngữ pháp</th>
 												<th class="center">Tên hình ảnh</th>
-												<th class="center">Xóa</th>
 												<th class="center">Thêm nội dung</th>
+												<th class="center">Xóa</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -105,8 +105,12 @@
 													<td class="center">${list.grammarguidelineid }</td>
 													<td class="center">${list.grammarname }</td>
 													<td class="center">${list.content }</td>
-													<td class="center">Xoá</td>
-													<td class="center">Duy</td>
+													<td class="center"><a class="green" href="#"> <i
+															class="ace-icon fa fa-pencil bigger-130"></i>
+													</a></td>
+													<td class="center"><a class="red" href="#"> <i
+															class="ace-icon fa fa-trash-o bigger-130"></i>
+													</a></td>
 												</tr>
 											</c:forEach>
 										</tbody>
@@ -116,14 +120,8 @@
 
 							<div class="row">
 								<div class="col-xs-12">
-									<button class="btn btn-white btn-info btn-bold">
-										<i class="ace-icon fa fa-floppy-o bigger-120 blue"></i> Thêm
-										bài
-									</button>
-									<button class="btn btn-white btn-warning btn-bold">
-										<i class="ace-icon fa fa-trash-o bigger-120 orange"></i> Thêm
-										hình
-									</button>
+									<button type="button" class="btn btn-white btn-info btn-bold"
+										data-toggle="modal" data-target="#myModal">Thêm bài</button>
 								</div>
 
 							</div>
@@ -145,6 +143,49 @@
 		</a>
 	</div>
 
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Thêm bài hướng dẫn ngữ pháp</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- PAGE CONTENT BEGINS -->
+							<form class="form-horizontal" role="form">
+								<div class="col-sm-9">
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right"
+											for="form-field-1"> Nhập tên </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1-1"
+												placeholder="Tên bài hướng dẫn ngữ pháp"
+												class="form-control" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				<br />
+				<div class="modal-footer">
+
+					<button class="btn btn-info" type="button">Thêm mới</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 	<script src="Template/Back-End/assets/js/jquery-2.1.4.min.js"></script>
 
