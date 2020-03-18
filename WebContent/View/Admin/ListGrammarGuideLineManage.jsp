@@ -147,43 +147,39 @@
 	<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
-
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Thêm bài hướng dẫn ngữ pháp</h4>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-xs-12">
-							<!-- PAGE CONTENT BEGINS -->
-							<form class="form-horizontal" role="form">
+			<form action="InsertGrammarGuideLineName" method="POST">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Thêm bài hướng dẫn ngữ pháp</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
 								<div class="col-sm-9">
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right"
 											for="form-field-1"> Nhập tên </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1-1"
-												placeholder="Tên bài hướng dẫn ngữ pháp"
-												class="form-control" />
+											<input type="text" placeholder="Tên bài hướng dẫn ngữ pháp"
+												class="form-control" name="grammarname" />
 										</div>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
 					</div>
+					<br />
+					<div class="modal-footer">
 
+						<button class="btn btn-info" type="submit">Thêm mới</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+					</div>
 				</div>
-				<br />
-				<div class="modal-footer">
-
-					<button class="btn btn-info" type="button">Thêm mới</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
-				</div>
-			</div>
-
+			</form>
 		</div>
 	</div>
 
